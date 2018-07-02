@@ -13,7 +13,7 @@ class DummyServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        echo "--DummyServiceProvider.php - bin die boot()<br>";
+        // echo "--DummyServiceProvider.php - bin die boot()<br>";
     }
     
     /**
@@ -23,6 +23,6 @@ class DummyServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        echo " --DummyServiceProvider.php - bin die register()<br/>";
+        // echo " --DummyServiceProvider.php - bin die register()<br/>";
     }
 }
