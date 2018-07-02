@@ -16,6 +16,13 @@ Route::get('/', function () {
     // return view('welcome');
 });
 
+
+//Route -> Controller
+Route::get('/', 'ContentsController@home');
+Route::get('/clients', 'ClientController@index');
+Route::get('/clients/new', 'ContentsController@newclient');
+Route::get('/clients/post', 'ContentsController@create');
+
 //Info: Array wird in eine JSON konvertiert von Laravel
 Route::get('/about', function () {
     // return '<h1>-- web.php - Mit neuer URL Route bzw. Segment "about"</h1>';
