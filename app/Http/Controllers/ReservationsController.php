@@ -7,4 +7,7 @@ use Illuminate\Http\Request;
 class ReservationsController extends Controller
 {
     //
+    public function bookRoom($room_id, $date_in, $date_out){
+        return null;
+    }
 }

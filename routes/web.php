@@ -20,8 +20,15 @@ Route::get('/', function () {
 //Route -> Controller
 Route::get('/', 'ContentsController@home');
 Route::get('/clients', 'ClientController@index');
-Route::get('/clients/new', 'ContentsController@newclient');
-Route::get('/clients/post', 'ContentsController@create');
+Route::get('/clients/new', 'ClientController@newclient');
+Route::get('/clients/post', 'ClientController@create');
+Route::get('/clients/{client_id}', 'ClientController@show');
+Route::post('/clients/{client_id}', 'ClientController@modify');
+
+Route::get('/reservations/{client_id}', 'RoomsController@checkAvailableRooms');
+Route::post('/reservations/{client_id}', 'RoomsController@checkAvailableRooms');
+
+Route::get('/book/reservations/{client_id}/{room_id}/{date_in}/{date_out}', 'ReservationsController@bookRoom');
 
 //Info: Array wird in eine JSON konvertiert von Laravel
 Route::get('/about', function () {
