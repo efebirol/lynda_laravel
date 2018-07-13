@@ -8,6 +8,6 @@ class RoomsController extends Controller
 {
     //GET and POST
     public function checkAvailableRooms($client_id){
-        return "xxx2";
+        return view("rooms/checkAvailableRooms");
     }
 }
