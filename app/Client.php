@@ -6,5 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Client extends Model
 {
-    // CLI created controller
+    //
+    public function reservations()
+    {
+        return $this->hasMany('App\Reservation');
+    }
 }
