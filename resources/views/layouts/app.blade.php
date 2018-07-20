@@ -1,3 +1,4 @@
+<!-- Statischer Code wird nach und nach mit dynamischer Code (in Datei) ersetzt) -->
 <!DOCTYPE html>
 <html data-whatinput="keyboard" data-whatintent="keyboard" class=" whatinput-types-initial whatinput-types-keyboard"><head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
@@ -43,13 +44,8 @@
     
 @yield('content')
     
+@yield('copyright')
 
-    <div class="row column">
-      <hr>
-      <ul class="menu">
-        <li class="float-right">Copyright 2017</li>
-      </ul>
-    </div>
 
     <script>
       $(document).foundation();
