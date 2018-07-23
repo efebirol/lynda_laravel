@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
--- home.blade.php - Start - Section
 @section('content')
--- home.blade.php - End - Section
+-- home.blade.php - Start - Section
     <div class="row">
       <div class="medium-6 columns">
         <h4>Landon Hotel App {{ $version }}</h4>
@@ -15,6 +14,7 @@
         <p>{{ $last_updated }}</p>
       </div>
     </div>
+-- home.blade.php - End - Section
 @endsection
 
 

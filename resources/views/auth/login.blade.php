@@ -24,7 +24,7 @@
                             </div>
                         </div>
 
-                        <b>Passwort: 12345689</b>
+                        <b>Passwort: 123456789</b>
                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <label for="password" class="col-md-4 control-label">Password</label>
 
