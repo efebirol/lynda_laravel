@@ -24,6 +24,25 @@ class ClientController extends Controller
     {
         $data = [];
 
+        //simuliere 2 Einträge
+        // $obj = new \stdClass;
+        // $obj->id = 1;
+        // $obj->title = 'mr';
+        // $obj->name = 'johntest';
+        // $obj->last_name = 'doetest';
+        // $obj->email = 'john@domain.com';
+        // $data['clients'][] = $obj;
+        
+        
+        // $obj = new \stdClass;
+        // $obj->id = 2;
+        // $obj->title = 'ms';
+        // $obj->name = 'jane';
+        // $obj->last_name = 'doe';
+        // $obj->email = 'jane@another-domain.com';
+        // $data['clients'][] = $obj;
+
+        //alle Einträge aus der Datenbank
         $data['clients'] = $this->client->all();
         return view('client/index', $data);
     }

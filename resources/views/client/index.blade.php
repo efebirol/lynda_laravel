@@ -6,6 +6,8 @@
         <h4>Clients</h4>
         <div class="medium-2  columns"><a class="button hollow success" href="{{ route('new_client') }}">ADD NEW CLIENT</a></div>
 
+        <!-- Vardump beispielhaft alle Daten -->
+        <!-- {{ var_dump($data['clients'])}} -->
         
         <table class="stack">
           <thead>

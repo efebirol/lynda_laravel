@@ -15,6 +15,7 @@ class ContentsController extends Controller
         $last_updated = $request->session()->has('last_updated') ? 
         $request->session()->pull('last_updated') : 'none';
         $data['last_updated'] = $last_updated;
+        $data['meineWerte'] = "--ContentsController - Werte die vom Controller kommen";
         return view('contents/home', $data);
     }
 

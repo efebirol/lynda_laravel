@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+-- upload.blade.php - Start - Section
     <div class="row">
       <div class="medium-6 large-5 columns">
         <form method="post" enctype="multipart/form-data">
@@ -11,4 +12,5 @@
         </form>
       </div>
     </div>
+-- upload.blade.php - End - Section
 @endsection

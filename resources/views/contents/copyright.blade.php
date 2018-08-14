@@ -1,3 +1,4 @@
+<!-- Syntax @extends('<Ordnername>.<Bladedateiname') -->
 @extends('layouts.app')
 
 <!-- Noch eine Section ins Template -->
