@@ -7,6 +7,7 @@
         <form action="/clients/new" method="post">
           <div class="medium-4  columns">
             <label>Title</label>
+            <!-- Ausgabe aus dem ClientController.php -->
             <select name="form[title]">
             @foreach( $titles as $title )
                           <option value="{{ $title }}" >{{ $title }}.</option>

@@ -58,6 +58,7 @@ class ClientController extends Controller
 
     public function newClient( Request $request, Client $client )
     {
+        //Übung: Titles vom Model (newClient.blade.php für die View)
         $data = [];
 
         $data['title'] = $request->input('title');
