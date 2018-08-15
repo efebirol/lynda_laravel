@@ -69,6 +69,7 @@ class ClientController extends Controller
         $data['city'] = $request->input('city');
         $data['state'] = $request->input('state');
         $data['email'] = $request->input('email');
+        $data['hobbies'] = $request->input('hobbies');
         
 
 

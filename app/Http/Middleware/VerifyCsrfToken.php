@@ -11,6 +11,7 @@ class VerifyCsrfToken extends BaseVerifier
      *
      * @var array
      */
+    // Deaktiviere Schutz für Laravel für jeden Request (Lösung das VerifyCsrfToken Problem zu umgehen)
     protected $except = [
         //
         //'*'
