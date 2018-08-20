@@ -51,11 +51,6 @@
             <small class="error">{{$errors->first('email')}}</small>
           </div>
           <div class="medium-12  columns">
-            <label>Hobbies</label>
-            <input name="hobbies" type="text" value="{{ old('hobbies') ? old('hobbies') : $hobbies }}">
-            <small class="error">{{$errors->first('hobbies')}}</small>
-          </div>
-          <div class="medium-12  columns">
             <input value="SAVE" class="button success hollow" type="submit">
           </div>
         </form>
