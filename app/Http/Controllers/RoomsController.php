@@ -22,6 +22,7 @@ class RoomsController extends Controller
         $data['rooms']= $room->getAvailableRooms($dateFrom, $dateTo);
         $data['client'] = $client->find($client_id);
 
+        //Eloquent - (Return data to the view)
         return view('rooms/checkAvailableRooms', $data);
     }
 }

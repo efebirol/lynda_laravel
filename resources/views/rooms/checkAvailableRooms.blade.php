@@ -29,6 +29,7 @@
           </thead>
           <tbody>
           @unless( empty( $dateFrom ) || empty( $dateTo ) )
+          <!-- Eloquent - (Return data to the view) -->
           @foreach( $rooms as $room )
                       <tr>
               <td>{{$room->name}}</td>
