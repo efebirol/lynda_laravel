@@ -18,6 +18,7 @@
           <div class="medium-4  columns">
             <label>Name</label>
             <input name="name" type="text" value="{{ old('name') ? old('name') : $name }}">
+            <!-- Fehlerausgabe (Validierung) -->
             <small class="error">{{$errors->first('name')}}</small>
           </div>
           <div class="medium-4  columns">
@@ -49,11 +50,6 @@
             <label>Email</label>
             <input name="email" type="text" value="{{ old('email') ? old('email') : $email }}">
             <small class="error">{{$errors->first('email')}}</small>
-          </div>
-          <div class="medium-12  columns">
-            <label>Hobbies</label>
-            <input name="hobbies" type="text" value="{{ old('hobbies') ? old('hobbies') : $hobbies }}">
-            <small class="error">{{$errors->first('hobbies')}}</small>
           </div>
           <div class="medium-12  columns">
             <input value="SAVE" class="button success hollow" type="submit">

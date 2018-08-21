@@ -69,13 +69,15 @@ class ClientController extends Controller
         $data['city'] = $request->input('city');
         $data['state'] = $request->input('state');
         $data['email'] = $request->input('email');
-        $data['hobbies'] = $request->input('hobbies');
         
 
 
         if( $request->isMethod('post') )
         {
+            //debug mit dd()-Methode
             //dd($data);
+
+            //Validiere die Inputfelder
             $this->validate(
                 $request,
                 [
@@ -86,7 +88,6 @@ class ClientController extends Controller
                     'city' => 'required',
                     'state' => 'required',
                     'email' => 'required',
-
                 ]
             );
 

@@ -35,7 +35,6 @@ class ClientTableSeeder extends Seeder
                 'city' => 'Los Angeles',
                 'state' => 'CA',
                 'email' => 'jane@example.com',
-                'hobbies' => 'TestHobbies',
             ]
         );
     }

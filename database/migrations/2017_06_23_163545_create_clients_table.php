@@ -24,7 +24,6 @@ class CreateClientsTable extends Migration
             $table->string('city');
             $table->string('state');
             $table->string('email');
-            $table->string('hobbies');
             $table->timestamps();
         });
     }
