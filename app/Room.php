@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\DB;
 
 class Room extends Model
 {
-    //
+    //Eloquent - (Select data with raw queries)
     public function getAvailablerooms($start_date, $end_date)
     {
         $available_rooms = DB::table('rooms as r')
