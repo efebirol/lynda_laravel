@@ -11,6 +11,7 @@ class ReservationsController extends Controller
     //
     public function bookRoom($client_id, $room_id, $date_in, $date_out)
     {
+        // Eloquent - (Add relational data)
         $reservation = new Reservation();
         $client_instance = new Client();
         $room_instance = new Room();

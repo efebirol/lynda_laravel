@@ -27,6 +27,7 @@ class Room extends Model
         return $available_rooms;
     }
 
+    // Eloquent - Add relational data - prüfe ob raum "available" ist oder nicht
     public function isRoomBooked( $room_id, $start_date, $end_date )
     {
 
