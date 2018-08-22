@@ -23,6 +23,7 @@ class ReservationsController extends Controller
 
         $reservation->room()->associate($room);
         $reservation->client()->associate($client);
+        // Eloquent - concurrent connection - prüfe ob raum "available" ist oder nicht bevor ich in DB speichere
         if( $room_instance->isRoomBooked( $room_id, $date_in, $date_out ) )
         {
             abort(405, 'Trying to book an already booked room');
